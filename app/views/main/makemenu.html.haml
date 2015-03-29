@@ -1,0 +1,40 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          / = link_to "kosei", dashboard_path
+        %li
+          = link_to "ログイン", login_path
+        .clear
+/ header
+/ main
+#main
+  %h1
+    メニューの説明
+    %br/
+  %h2
+    あなたの料理の魅力を伝えましょう
+    %br
+      レストランのように堅苦しく振舞う必要はなく、
+      %br
+      普段作っている料理を提供してください。
+  .form-box
+    .form-group
+      %textarea#exampleInputMenu.form-control{:placeholder => "メニュー名（10文字以内）", :type => "menu"}
+    .form-group
+      %input#exampleInputSub-menu.form-control{:placeholder => "サブタイトル（28文字以内）", :type => "subttitle"}
+    .uploadButton
+      ファイルを選択
+      %input{:onchange => "uv.style.display='inline-block'; uv.value = this.value;", :type => "file"}/
+      %input#uv.uploadValue{:disabled => "", :type => "text"}/
+    .form-group
+      %input#exampleInputPrice.form-control{:placeholder => "サービス料金(円)", :type => "price"}
+    .form-group
+      %input#exampleInputDescription.form-control{:placeholder => "説明文", :type => "description"}
+    .button-group
+      %button.btn.btn-default{:type => "cancel"} キャンセル
+      %a.btn.btn-signup{:href => "cook.perfect.html"} メニューを保存する

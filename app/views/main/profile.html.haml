@@ -1,0 +1,35 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          = link_to "新規登録", usersignup_path
+        %li
+          = link_to "ログイン", login_path
+        .clear
+
+#main
+  %h1
+    プロフィールを登録
+    %br/
+  %h2
+    あなたの料理を食べたい人に
+    %br
+      あなたの魅力を伝えましょう
+  .form-box
+    .form-group
+      %input#exampleInputFamilyname.form-control{:placeholder => "姓", :type => "familyname"}
+    .form-group
+      %input#exampleInputLastname.form-control{:placeholder => "名", :type => "firstname"}
+    .form-group
+      %input#exampleInputBig-address.form-control{:placeholder => "都道府県/市町村", :type => "big-address"}
+    .form-group
+      %input#exampleInputSmall-address.form-control{:placeholder => "番地/マンション名/部屋番号", :type => "small-address"}
+    .form-group
+      %textarea#exampleInputIntoroduction.form-control{:placeholder => "自己紹介", :type => "introduction"}
+    .button-group
+      %button.btn.btn-default{:type => "cancel"} キャンセル
+      %a.btn.btn-signup{:href => "makemenu_path"} 次のステップへ

@@ -1,0 +1,59 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          = link_to "新規登録", usersignup_path
+        %li
+          = link_to "ログイン", login_path
+        .clear
+/ main
+#main
+  .cotainer-left
+    %h1 たこやき
+    %img.top-img{:alt => "トップ画像", :src => "/assets/eat/index/index1.jpg"}
+      .caption
+        .sub-img
+          .img-box 
+            %img{:alt => "サブ画像", :src => "/assets/takoyaki1.jpeg"}
+          .img-box 
+            %img{:alt => "サブ画像", :src => "/assets/takoyaki2.jpeg"}
+          .img-box 
+            %img{:alt => "サブ画像", :src => "/assets/takoyaki3.jpeg"}
+          .img-box 
+            %img{:alt => "サブ画像", :src => "/assets/takoyaki4.jpeg"}
+          .clear  
+
+          
+        %br
+          %br
+            %h1
+              ＜説明文＞
+            %p
+              一人暮らしているとなかなかたこやきができませんよね？
+              私は実家でたこやき屋を営んでいます。本場、大阪仕込み
+              のたこやきを東京で一緒に味わいませんか？厳選された
+              「たこ」を使用していて、味には自信があります。一緒に
+              楽しくたこやきを作りたい人はリクエストをください!
+  .cotainer-right
+    .container-top
+      %h2 1,500円
+      %br
+        %h3 予約希望日
+        %br
+          %input#booking_date.form-control.hasDatepicker{:name => "booking[date]", :placeholder => "日付", :type => "text"}
+            %br
+              %input#booking_meal_type_lunch{:checked => "checked", :name => "booking[meal_type]", :type => "radio", :value => "lunch"}
+                %label{:for => "booking_ランチ"} ランチ
+                %input#booking_meal_type_dinner{:name => "booking[meal_type]", :type => "radio", :value => "dinner"}
+                  %label{:for => "booking_ディナー"} ディナー
+                  %br
+                    %a.request{:href => "payment.html"} 予約をリクエストする
+    .container-bottom
+      %h5 作り手
+      %img.profile-img{:alt => "プロフィール画像", :src => "/assets/eat/profile/profile1.jpg"}
+        %h6 居住地:東京都新宿区
+        %h7 自己紹介:実家がたこやき屋です!!!

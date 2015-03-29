@@ -1,0 +1,80 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          = link_to "新規登録", usersignup_path
+        %li
+          = link_to "ログイン", login_path
+        .clear
+
+#main
+  .container
+    .row
+      .col-sm-6.col-md-4
+        .thumbnail.box
+          %img{:alt => "料理画像", :src => "/assets/eat/index/index1.jpg"}
+            .caption
+              = link_to detail_path do
+                %h1
+                  たこやき　1500円
+                %img{:src => "/assets/eat/profile/profile1.jpg"}
+                  %p
+                    一人暮らしをしているとなかなか自宅でたこやきたべませんよね。
+      .col-sm-6.col-md-4
+        .thumbnail.box
+          %img{:alt => "料理画像", :src => "/assets/eat/index/index2.jpg"}
+            .caption
+              = link_to detail_path do
+                %h1
+                  手作りちらし寿司    1800円
+                %img{:src => "/assets/eat/profile/profile2.jpg"}
+                  %p
+                    伝統のちらし寿司を楽しく手作りしながら食べましょう。
+      .col-sm-6.col-md-4
+        .thumbnail.box
+          %img{:alt => "料理画像", :src => "/assets/eat/index/index3.jpg"}
+            .caption
+              = link_to detail_path do
+                %h1
+                  日本の家庭料理   1300円
+                %img{:src => "/assets/eat/profile/profile3.jpg"}
+                  %p
+                    基本的だけど、心温まる日本食を食べませんか？
+                    家族で一緒に食べましょう
+    .row
+      .col-sm-6.col-md-4
+        .thumbnail.box
+          %img{:alt => "料理画像", :src => "/assets/eat/index/index4.jpg"}
+            .caption
+              = link_to detail_path do
+                %h1
+                  すきやき    2800円
+                %img{:src => "/assets/eat/profile/profile4.jpg"}
+                  %p
+                    日本の伝統料理を一緒に堪能しませんか。
+                    楽しいですよ。
+      .col-sm-6.col-md-4
+        .thumbnail.box
+          %img{:alt => "料理画像", :src => "/assets/eat/index/index5.jpg"}
+            .caption
+              = link_to detail_path do
+                %h1
+                  昔ながらの料理     1500円
+                %img{:src => "/assets/eat/profile/profile5.jpg"}
+                  %p
+                    昔ながらの日本料理を食べませんか？心がほっこりしますよ。
+      .col-sm-6.col-md-4
+        .thumbnail.box
+          %img{:alt => "料理画像", :src => "/assets/eat/index/index6.jpg"}
+            .caption
+              = link_to detail_path do
+                %h1
+                  ちらし寿司     800円
+                %img{:src => "/assets/eat/profile/profile6.jpg"}
+                  %p
+                    一人暮らしをしているとなかなか自宅でちらし寿司たべませんよね。
+  / main

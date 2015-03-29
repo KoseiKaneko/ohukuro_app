@@ -1,0 +1,23 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          / = link_to "kosei", dashboard_path
+        %li
+          = link_to "ログイン", login_path
+        .clearz
+/ header
+/ main
+#main
+  %p
+    メニューが正常に登録されました。
+    %br
+      ご登録ありがとうございました!!!
+      %br
+  %a.dashboard{:href => "dashboard.html"} ダッシュボードページへ
+  %img{:alt => "確認画像", :src => "/assets/eat/index/index1.jpg"}
+/ main

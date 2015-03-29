@@ -1,0 +1,44 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          = link_to "新規登録", usersignup_path
+        %li
+          = link_to "ログイン", login_path
+        .clear
+      
+
+#main 
+  .title
+    新規ユーザー登録
+  .form-box
+    .header-title
+      メールアドレスを使って登録する
+    .form-group
+      %input#exampleInputFamilyname.form-control{:placeholder => "姓", :type => "familyname"}  
+    .form-group
+      %input#exampleInputLastname.form-control{:placeholder => "名", :type => "lastname"}
+    .form-group
+      %input#exampleInputMailaddress.form-control{:placeholder => "メールアドレス", :type => "mailaddress"}
+    .form-group
+      %input#exampleInputPassword.form-control{:placeholder => "パスワード", :type => "password"}
+    .form-group
+      %input#exampleInputPassword1.form-control{:placeholder => "パスワードの確認", :type => "password1"}
+    .button-group
+      %button.btn.btn-default{:type => "cancel"} キャンセル      
+      = link_to index_path, class: "btn btn-signup" do
+        新規登録する
+    %hr
+    .footer-title
+      すでに登録済みの方
+      = link_to "ログインする", login_path
+      
+      
+ 
+       
+       
+        

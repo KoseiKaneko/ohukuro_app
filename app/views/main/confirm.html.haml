@@ -1,0 +1,23 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          / = link_to "kosei", dashboard_path
+        %li
+          = link_to "ログイン", login_path
+        .clear
+/ header
+/ main
+#main
+  %p
+    予約を受け付けました
+    %br
+      作り手からの承認があるまで、
+      %br
+        今しばらく、お待ち下さいませ。
+  %a.dashboard{:href => "dashboard.html"} ダッシュボードページへ
+  %img{:alt => "確認画像", :src => "/assets/eat/index/index1.jpg"}

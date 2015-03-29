@@ -1,0 +1,27 @@
+#header
+  %nav#header
+    %ul.content
+      .header-left
+        %li
+          = link_to "おふくろ", top_path
+      .header-right
+        %li
+          = link_to "新規登録", usersignup_path
+        %li
+          = link_to "ログイン", login_path
+        .clear
+
+#main
+  .main-top
+    .white-back
+      %h1 おふくろの味を楽しもう
+      %br
+      %h2 〜料理を作る人と食べる人を繋げるマッチングサイト〜
+  .main-contents
+    .button-group
+      %a.btn-cook{:href => "cook.profile.html.haml"}
+        おふくろの味を誰かに
+        %b 作りたい
+      %a.btn-eat{:href => "usersignup.html.haml"}
+        素敵なおふくろの味を
+        %b 食べたい
