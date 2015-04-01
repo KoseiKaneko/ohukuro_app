@@ -22,7 +22,8 @@
       %input#exampleInputPassword.form-control{:placeholder => "パスワード", :type => "password"}
     .button-group
       %button.btn.btn-default{:type => "cancel"} キャンセル
-      %a.btn.btn-signup {= link_to "ログインする", index_path}
+      = link_to index_path, class: "btn btn-signup" do
+        ログインする
     %hr
     .footer-title
       アカウント未登録の方
